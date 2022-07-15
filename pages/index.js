@@ -1,4 +1,6 @@
-export default function Home() {
+import Login from "../components/login";
+
+const Home = () => {
   return (
     <div className="flex items-center justify-center h-screen">
       <div className="text-center text-slate-300">
@@ -6,10 +8,10 @@ export default function Home() {
         <h3 className="mb-10 text-2xl font-medium">
           Rate and review your favorite albums.
         </h3>
-        <a className="px-3 py-2 text-xl font-light rounded-md bg-slate-300 text-slate-800">
-          Get started
-        </a>
+        <Login />
       </div>
     </div>
   );
-}
+};
+
+export default Home;
